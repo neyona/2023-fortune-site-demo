@@ -1,0 +1,10 @@
+DJANGO_SETTINGS_MODULE=fc_project.settings.production
+ALLOWED_HOSTS=web,***************,****************
+ENVIRONMENT=production
+SECRET_KEY=************************************************************
+DEBUG=False
+POSTGRES_ENGINE=django.db.backends.postgresql
+AWS_ACCESS_KEY_ID=***************
+AWS_SECRET_ACCESS_KEY=******************************
+AWS_STORAGE_BUCKET_NAME=***************
+S3_BUCKET=***************

@@ -1,0 +1,63 @@
+/* The whole site within the body tags */
+html {
+  background-color: $background-all;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body {
+  @include bodies(1.4rem, $font-base, $paragraph-font, $background-all, 2.5rem, $font-h1, $title-h1, 2.1rem, $font-h2, $title-h2, 2rem, $font-h3, $title-h3, 1.5rem, 1.5rem);
+}
+
+body.dyslexia {
+  @include bodies(1.2rem, $open--dyslexic, $paragraph-font, $background-all, 1.8rem, $open--dyslexic, $title-h1, 1.5rem, $open--dyslexic, $title-h2, 1.4rem, $open--dyslexic, $title-h3, 1rem, 1rem);
+}
+
+hr {
+  background-color: $paragraph-font;
+}
+
+a {
+  color: $link-visited !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $link-hover-focus !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $link-bg1 !important,
+        $link-bg2 !important,
+        $link-bg3 !important
+      );
+  }
+  &:active {
+    color: $link-active !important;
+  }
+  &:visited {
+    color: $link-hover-focus !important;
+    background-color: $link-bg-visited !important;
+  }
+}
+
+/* An exception for buttons that are inside Links from react-router-dom */
+a.link-router:hover,
+a.link-router:focus {
+  background-image: none !important;
+}
+/* An exception for buttons that are inside links */
+.special-link:hover,
+.special-link:focus {
+  background-image: none !important;
+}

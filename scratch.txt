@@ -1,0 +1,10 @@
+I use scratch text files to keep track of stuff, here is a sample of a note I
+left for myself:
+
+Volumes or DB full/not working, no space left on device
+Way to see volumes:
+df -h
+Running the following got a lot of space available, didn't touch some volumes.
+Run this while in the container.
+docker system prune -a --volumes
+I ran make migrate (docker-compose exec web python3.11 manage.py migrate)

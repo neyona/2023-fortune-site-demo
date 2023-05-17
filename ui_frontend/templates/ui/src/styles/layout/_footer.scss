@@ -1,0 +1,11 @@
+/* Footer CSS, I took out the footer, it's a navbar that
+sticks to the bottom and blends in. */
+/* THE FONT HERE LOOKS LARGER IN DEV!! DON'T CHANGE THE SIZE */
+.footer-custom {
+  color: $link-visited !important;
+  // font-family: $link-bg1 !important;
+  font-weight: 200;
+  font-size: 1.3rem !important;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+}

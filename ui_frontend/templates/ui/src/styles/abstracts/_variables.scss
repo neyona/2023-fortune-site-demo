@@ -1,0 +1,648 @@
+/*
+-----------------------------------------------------------------------------
+This file contains application-wide Sass variables.
+-----------------------------------------------------------------------------
+Fonts:  I add notes up here usually
+*/
+@import url(https://fonts.googleapis.com/css2?family=Cantarell:ital@1&family=Courgette&family=Pompiere&family=Stylish&family=Tangerine:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Farsan&family=IM+Fell+English+SC&family=Montserrat:wght@200;300&display=swap);
+@import url(https://fontlibrary.org/face/opendyslexic);
+@import url(https://fonts.cdnfonts.com/css/academy-engraved-let);
+@import url(https://fonts.cdnfonts.com/css/fogle-hunter);
+@import url(https://fonts.cdnfonts.com/css/ocean-iacy);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap);
+
+/* Font variables */
+$font-base: 'Stylish', sans-serif;
+$times-new-roman-font-stack: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif !default;
+$fish-font: 'Ocean_Iacy', sans-serif;
+$IBM: "IBM Plex Mono", monospace;
+
+/* Used for open dyslexic */
+$open--dyslexic: 'OpenDyslexicRegular', regular;
+
+/* used for h1, h2, and h3 */
+$font-h1: 'Academy Engraved LET', sans-serif;
+$font-h2: 'Pompiere', cursive;
+$font-h3: 'Fogle Hunter', sans-serif;
+
+/* Navbar font */
+$navbar-font: 'Montserrat';
+
+/* Main color variable names */
+$background-all: #020a2d;
+$background-one: #033f39;
+$background-two: #033f39;
+$background-three: #033f39;
+$background-four: #033f39;
+
+/* Heading color variables */
+$title-h1: #90e0ef;
+$title-h2: #47d1bf;
+$title-h3: #a96fdb;
+$title-h4: #a96fdb;
+
+/* Text color variable */
+$paragraph-font: #f5f5f7;
+
+/* Spinner color */
+$spinner-text: #4cc9f0;
+
+/* Link color variable #09a6f3 #07c8f9 #ab4da2 #a96fdb #4db8ff #c378b9 #64dfdf */
+$link-unvisited: #07c8f9;
+$link-visited: #09a6f3;
+$link-hover-focus: #64dfdf;
+$link-active: #cea7ee;
+$link-bg-visited: #033f39;
+$link-bg1: #5b0297;
+$link-bg2: #3b00b3;
+$link-bg3: #2948ff;
+
+/* Special title color variables */
+$special-title1: #7209b7;
+$special-title2: #480ca8;
+$special-title3: #4361ee;
+$special-title4: #4895ef;
+$image-border: gold;
+$image-border-merch: rebeccapurple;
+
+/* Caption color variable */
+$caption: #f5f5f7;
+
+/* Form color variable */
+$form-control: #f5f5f7;
+
+/* Navbar color variables */
+$navbar-text: #f5f5f7;
+$navbar-active: #9f85ff;
+$navbar-background: #000000;
+$navbar-background-dropdown: #072b2c;
+$navbar-toggler-shadow1: #9f85ff;
+$navbar-toggler-shadow2: #f5f5f7;
+
+/* Icon color variables */
+$icon1: #a96fdb;
+
+/* Footer color variables */
+$footer-text: #9f85ff;
+$footer-background:#0c0e0d;
+
+/* Card specific color variables */
+$card-background: #0b4141;
+$card-shadow1: #082f2f;
+$card-shadow2: #0e5353;
+
+/* Error page color variables */
+$error1: #4db8ff;
+$error2: #70dbdb;
+
+/* Aura Colors */
+$aura-1: #ffc6fe;
+$aura-2: #ffcb05;
+$aura-3: MediumSpringGreen;
+$aura-4: cyan;
+$aura-5: #855df7;
+$aura-6: #f5f5f7;
+$aura-7: #ff0054;
+$aura-8: snow;
+$aura-9: #2b9348;
+$aura-10: #1e96fc;
+$aura-11: #7209b7;
+$aura-12: dimgray;
+$aura-13: #ff9400;
+
+/* Card container color variables, these are in order */
+$card-text: #eaebfb;
+
+$card-pink1: #bd4ef9;
+$card-pink2: #cc00cc;
+$card-pink3: #800080;
+$card-pink4: #b04fa3;
+
+$card-gold1: #ffe94e;
+$card-gold2: #fdc43f;
+$card-gold3: #f9a620;
+$card-gold-text: #005435;
+
+$card-lightgreen1: #0f9b0f;
+$card-lightgreen2: #2F7336;
+$card-lightgreen3: #144d00;
+
+$card-cyan1: cyan;
+$card-cyan2: #00a3cc;
+$card-cyan3: midnightblue;
+
+$card-lightpurple1: #858ae3;
+$card-lightpurple2: #613dc1;
+$card-lightpurple3: #461177;
+
+$card-noaura1: #00b300;
+$card-noaura2: #1a53ff;
+$card-noaura3: #930562;
+
+$card-darkpink1: #ff1ab3;
+$card-darkpink2: #ff0054;
+$card-darkpink3: darkred;
+
+$card-snow1: #99ddff;
+$card-snow2: #4dffa6;
+$card-snow3: #c299ff;
+$card-snow-text: darkred;
+
+$card-limegreen1: limegreen;
+$card-limegreen2: forestgreen;
+$card-limegreen3: darkslategrey;
+
+$card-dodgerblue1: #004e92;
+$card-dodgerblue2: #0059b3;
+$card-dodgerblue3: dodgerblue;
+$card-dodgerblue4: #5c00e6;
+
+$card-indigo1: #8b2fc9;
+$card-indigo2: #5a108f;
+$card-indogo3: indigo;
+$card-indigo4: #310055;
+
+$card-dimgray1: steelblue;
+$card-dimgray2: #002b80;
+$card-dimgray3: black;
+
+$card-orange1: #ffc300;
+$card-orange2: #ff9400;
+$card-orange3: #ff7300;
+$card-orange-text: #00509d;
+
+/* A card alternative */
+$card-one: #051B93;
+$card-two: #360593;
+$card-three: #7D0593;
+$card-four: #930562;
+$card-default1: mediumslateblue;
+$card-default2: darkgreen;
+$card-page1: #042860;
+$card-page2: #055A60;
+$card-home1: #010584;
+$card-home2: #150050;
+$card-home3: #020440;
+$card-home4: black;
+
+$card-dark1: #000b2e;
+$card-dark2: #000c33;
+$card-dark3: #000d38;
+$card-dark4: #000e3e;
+$card-dark5: #000f44;
+$card-dark6: #00104b;
+$card-dark7: #001253;
+$card-dark8: #00145b;
+$card-dark9: #001664;
+$card-dark10: #00186e;
+
+$card-dw1: #010a1b;
+$card-dw2: #011028;
+$card-dw3: #001534;
+$card-dw4: #00183b;
+$card-dw5: #001a41;
+$card-dw6: #001d47;
+$card-dw7: #001f4d;
+$card-dw8: #012254;
+$card-dw9: #01245a;
+$card-dw10: #012966;
+
+$card-art1: #4a006f;
+$card-art2: #470a77;
+$card-art3: #45147e;
+$card-art4: #421e86;
+$card-art5: #3f288d;
+$card-art6: #3d3195;
+$card-art7: #3a3b9c;
+$card-art8: #3745a4;
+$card-art9: #354fab;
+$card-art10: #3259b3;
+
+$card-wp1: #5e0055;
+$card-wp2: #560056;
+$card-wp3: #4e0057;
+$card-wp4: #470058;
+$card-wp5: #3f0059;
+$card-wp6: #37005b;
+$card-wp7: #2f005c;
+$card-wp8: #28005d;
+$card-wp9: #20005e;
+$card-wp10: #18005f;
+
+$card-wb1: #caf0f8;
+$card-wb2: #ade8f4;
+$card-wb3: #90e0ef;
+$card-wb4: #48cae4;
+$card-wb5: #00b4d8;
+$card-wb6: #0096c7;
+$card-wb7: #0077b6;
+$card-wb8: #023e8a;
+$card-wb9: #03045e;
+
+$card-wt1: #80ffdb;
+$card-wt2: #72efdd;
+$card-wt3: #64dfdf;
+$card-wt4: #56cfe1;
+$card-wt5: #48bfe3;
+$card-wt6: #4ea8de;
+$card-wt7: #5390d9;
+$card-wt8: #5e60ce;
+$card-wt9: #6930c3;
+$card-wt10: #7400b8;
+
+$card-wg1: #3fc1c0;
+$card-wg2: #20bac5;
+$card-wg3: #00b2ca;
+$card-wg4: #04a6c2;
+$card-wg5: #0899ba;
+$card-wg6: #0f80aa;
+$card-wg7: #16679a;
+$card-wg8: #1a5b92;
+$card-wg9: #1c558e;
+$card-wg10: #1d4e89;
+
+/* Button color variables */
+$btn-og-bg1: #b2f7ef;
+$btn-og-bg2: #80ffdb;
+$btn-og-bg3: #64dfdf;
+$btn-og-bg4: #48bfe3;
+$btn-text: #240046;
+$btn-text-hover: #7400b8;
+
+/* The colors used for the shadows for the
+button for the first page form */
+$shadow-1: #858ae3;
+$shadow-2: #8b2fc9;
+$shadow-3: #7364d2;
+$shadow-4: #5829a7;
+$shadow-5: #0096c7;
+$shadow-6: #ab51e3;
+
+/* Grow button for the contact form */
+$btn-gb-1: #00BCDD;
+$btn-gb-2: #F0F;
+
+/* Used for the toggle switch */
+$toggle-1: #4361ee;
+$toggle-2: #c77dff;
+
+$light: #80CCFF;
+$mid: #c77dff;
+$dark: #4361ee;
+
+/* Card container color variables */
+$container-text: #D1E8E2;
+$black: black;
+$blue-blue: #01005E;
+$blue-dark: #0D0E3A;
+
+$black-red: #d00000;
+$black-red1: #990000;
+$black-red2: #6f0000;
+$black-red3: #200122;
+
+$black-green: #25a244;
+$black-green1: #208b3a;
+$black-green2: #1a7431;
+$black-green3: #155d27;
+$black-green4: #10451d;
+
+$black-blue: #0466c8;
+$black-blue1: #00509d;
+$black-blue2: #0d47a1;
+$black-blue3: #03045e;
+$black-blue4: #001845;
+
+$black-orange: #fdbb2d;
+$black-orange1: #ec7d10;
+$black-orange2: #fc2f00;
+$black-orange3: #b21f1f;
+$black-orange4: #1a2a6c;
+
+$black-purple: #7303c0;
+$black-purple1: #5b0297;
+$black-purple2: #2F0743;
+$black-purple3: #200122;
+$black-purple4: #03001e;
+
+$black-pink: #ff8fa3;
+$black-pink1: #ff758f;
+$black-pink2: #c9184a;
+$black-pink3: #a4133c;
+$black-pink4: #590d22;
+
+$blue-green: #2b9348;
+$blue-green1: #007f5f;
+$blue-green2: #168aad;
+$blue-green3: #1e6091;
+$blue-green4: #184e77;
+
+$blue-purple: #4361ee;
+$blue-purple1: #3f37c9;
+$blue-purple2: #3b00b3;
+$blue-purple3: #3f2b96;
+$blue-purple4: #302b63;
+
+$blue-blue: #00b4d8;
+$blue-blue1: #0096c7;
+$blue-blue2: #0077b6;
+$blue-blue3: #023e8a;
+$blue-blue4: #03045e;
+
+$gray-black: #8e9aaf;
+$gray-black1: #6c757d;
+$gray-black2: #495057;
+$gray-black3: #343a40;
+$gray-black4: #212529;
+
+/* Special links for cards */
+$un-br: #f48c06;
+$bv-br: #6a040f;
+$hf-br: #ffba08;
+$bg1-br: #370617;
+$bg2-br: #6a040f;
+$bg3-br: #9d0208;
+$act-br: #ff8fa3;
+
+$un-bg: #9ef01a;
+$bv-bg: #004b23;
+$hf-bg: #ccff33;
+$bg1-bg: #132a13;
+$bg2-bg: #004b23;
+$bg3-bg: #38b000;
+$act-bg: #aacc00;
+
+$un-bb: #90caf9;
+$bv-bb: #072ac8;
+$hf-bb: #e3f2fd;
+$bg1-bb: #27187e;
+$bg2-bb: #072ac8;
+$bg3-bb: #1e96fc;
+$act-bb: #a2d6f9;
+
+$un-bo: #ffba08;
+$bv-bo: #621708;
+$hf-bo: #ffea00;
+$bg1-bo: #220901;
+$bg2-bo: #621708;
+$bg3-bo: #219ebc;
+$act-bo: #8ecae6;
+
+$un-bp: #4cc9f0;
+$bv-bp: #3f37c9;
+$hf-bp: #c0fdff;
+$bg1-bp: #3a0ca3;
+$bg2-bp: #3f37c9;
+$bg3-bp: #7209b7;
+$act-bp: #f72585;
+
+$un-bpi: #a2d2ff;
+$bv-bpi: #6a040f;
+$hf-bpi: #bde0fe;
+$bg1-bpi: #390099;
+$bg2-bpi: #cdb4db;
+$bg3-bpi: #ffc8dd;
+$act-bpi: #ffafcc;
+
+$un-gb: #73fbd3;
+$bv-gb: #5c7aff;
+$hf-gb: #b5ffe1;
+$bg1-gb: #001242;
+$bg2-gb: #5c7aff;
+$bg3-gb: #59d2fe;
+$act-gb: #44e5e7;
+
+$un-pb: #b366ff;
+$bv-pb: #3f37c9;
+$hf-pb: #c0fdff;
+$bg1-pb: #3a0ca3;
+$bg2-pb: #3f37c9;
+$bg3-pb: #7209b7;
+$act-pb: #f72585;
+
+$un-bblue: #90caf9;
+$bv-bblue: #072ac8;
+$hf-bblue: #e3f2fd;
+$bg1-bblue: #27187e;
+$bg2-bblue: #072ac8;
+$bg3-bblue: #1e96fc;
+$act-bblue: #a2d6f9;
+
+$un-grayb: #a4c3b2;
+$bv-grayb: #6b9080;
+$hf-grayb: #f6fff8;
+$bg1-grayb: #004e98;
+$bg2-grayb: #6b9080;
+$bg3-grayb: #f6fff8;
+$act-grayb: #eaf4f4;
+
+
+
+/* Title colors on cards */
+$title-br: #ffe6e6;
+$title-bg: #b2f7ef;
+$title-bb: #ccebff;
+$title-bo: #fff2e6;
+$title-bp: #f0e6ff;
+$title-bpink: #ffe6ff;
+$title-gb: #e6ffee;
+$title-pb: #f0e6ff;
+$title-bblue: #ccebff;
+$title-grayblack: white;
+
+/* Carousel background colors */
+$carousel-br: #03001e;
+$carousel-br1: #200122;
+$carousel-bg: #03001e;
+$carousel-bg1: #093028;
+$carousel-bb: #03001e;
+$carousel-bb1: #18005f;
+$carousel-bo: #03001e;
+$carousel-bo1: #200122;
+$carousel-bp: #03001e;
+$carousel-bp1: #2F0743;
+$carousel-bpink: #03001e;
+$carousel-bpink1: #590d22;
+$carousel-gb: #18005f;
+$carousel-gb1: #10451d;
+$carousel-pb: #18005f;
+$carousel-pb1: #3f2b96;
+$carousel-bblue: #18005f;
+$carousel-bblue1: #03045e;
+$carousel-grayblack: black;
+$carousel-grayblack1: #212529;
+
+$carousel-icon-color: #F0F8FF;
+
+$hr-color: #F0F8FF;
+
+/* Button color black-red */
+$black-red-text: #b21f1f;
+$black-red-background: black;
+$black-red-border: #303030;
+$black-red-shadow-1: #6f0000;
+$black-red-shadow-2: #6A82FB;
+$black-red-span-choice1: #6f0000;
+$black-red-span-choice2: #6A82FB;
+$black-red-active-text: #bfbfbf;
+$black-red-active-background: #b21f1f;
+$black-red-active-background-linear1: #b21f1f;
+$black-red-active-background-linear2: #302b63;
+$black-red-active-boxshadow1: #6f0000;
+$black-red-active-boxshadow2: #302b63;
+
+/* Button color black-green */
+$black-green-text: #1cca73;
+$black-green-background: black;
+$black-green-border: #303030;
+$black-green-shadow-1: #159957;
+$black-green-shadow-2: #155799;
+$black-green-span-choice1: #159957;
+$black-green-span-choice2: #155799;
+$black-green-active-text: #bfbfbf;
+$black-green-active-background: #17B794;
+$black-green-active-background-linear1: #17B794;
+$black-green-active-background-linear2: #155799;
+$black-green-active-boxshadow1: #159957;
+$black-green-active-boxshadow2: #155799;
+
+/* Button color black-blue */
+$black-blue-text: #80CCFF;
+$black-blue-background: black;
+$black-blue-border: #303030;
+$black-blue-shadow-1: #2948ff;
+$black-blue-shadow-2: #43C6AC;
+$black-blue-span-choice1: #2948ff;
+$black-blue-span-choice2: #43C6AC;
+$black-blue-active-text: #bfbfbf;
+$black-blue-active-background: #6A82FB;
+$black-blue-active-background-linear1: #6A82FB;
+$black-blue-active-background-linear2: #43C6AC;
+$black-blue-active-boxshadow1: #2948ff;
+$black-blue-active-boxshadow2: #43C6AC;
+
+/* Button color black-orange */
+$black-orange-text: #f7b733;
+$black-orange-background: black;
+$black-orange-border: #303030;
+$black-orange-shadow-1: #f7b733;
+$black-orange-shadow-2: #b21f1f;
+$black-orange-span-choice1: #f7b733;
+$black-orange-span-choice2: #b21f1f;
+$black-orange-active-text: #bfbfbf;
+$black-orange-active-background: #FBD786;
+$black-orange-active-background-linear1: #FBD786;
+$black-orange-active-background-linear2: #b21f1f;
+$black-orange-active-boxshadow1: #f7b733;
+$black-orange-active-boxshadow2: #b21f1f;
+
+/* Button color black-purple */
+$black-purple-text: #ae00ff;
+$black-purple-background: #212121;
+$black-purple-border: #303030;
+$black-purple-shadow-1: #ae00ff;
+$black-purple-shadow-2: #001eff;
+$black-purple-span-choice1: #ae00ff;
+$black-purple-span-choice2: #001eff;
+$black-purple-active-text: #bfbfbf;
+$black-purple-active-background: #6a00f4;
+$black-purple-active-background-linear1: #6a00f4;
+$black-purple-active-background-linear2: #001eff;
+$black-purple-active-boxshadow1: #ae00ff;
+$black-purple-active-boxshadow2: #001eff;
+
+/* Button color black-pink */
+$black-pink-text: #fae0e4;
+$black-pink-background: #590d22;
+$black-pink-border: #303030;
+$black-pink-shadow-1: #ffccd5;
+$black-pink-shadow-2: #c9184a;
+$black-pink-span-choice1: #ffccd5;
+$black-pink-span-choice2: #c9184a;
+$black-pink-active-text: #bfbfbf;
+$black-pink-active-background: #ff85a1;
+$black-pink-active-background-linear1: #ff85a1;
+$black-pink-active-background-linear2: #c9184a;
+$black-pink-active-boxshadow1: #ffccd5;
+$black-pink-active-boxshadow2: #c9184a;
+
+/* Button color blue-green */
+$blue-green-text: #80CCFF;
+$blue-green-background: #191654;
+$blue-green-border: #303030;
+$blue-green-shadow-1: #43C6AC;
+$blue-green-shadow-2: #155799;
+$blue-green-span-choice1: #43C6AC;
+$blue-green-span-choice2: #155799;
+$blue-green-active-text: #bfbfbf;
+$blue-green-active-background: #159957;
+$blue-green-active-background-linear1: #159957;
+$blue-green-active-background-linear2: #155799;
+$blue-green-active-boxshadow1: #43C6AC;
+$blue-green-active-boxshadow2: #155799;
+
+/* Button color blue-purple */
+$blue-purple-text: #b366ff;
+$blue-purple-background: #000533;
+$blue-purple-border: #303030;
+$blue-purple-shadow-1: #ae00ff;
+$blue-purple-shadow-2: #001eff;
+$blue-purple-span-choice1: #ae00ff;
+$blue-purple-span-choice2: #001eff;
+$blue-purple-active-text: #bfbfbf;
+$blue-purple-active-background: #7209b7;
+$blue-purple-active-background-linear1: #7209b7;
+$blue-purple-active-background-linear2: #001eff;
+$blue-purple-active-boxshadow1: #ae00ff;
+$blue-purple-active-boxshadow2: #001eff;
+
+/* Button color blue-blue */
+$blue-blue-text: #80CCFF;
+$blue-blue-background: black;
+$blue-blue-border: #303030;
+$blue-blue-shadow-1: #2948ff;
+$blue-blue-shadow-2: #43C6AC;
+$blue-blue-span-choice1: #2948ff;
+$blue-blue-span-choice2: #43C6AC;
+$blue-blue-active-text: #bfbfbf;
+$blue-blue-active-background: #6A82FB;
+$blue-blue-active-background-linear1: #6A82FB;
+$blue-blue-active-background-linear2: #43C6AC;
+$blue-blue-active-boxshadow1: #2948ff;
+$blue-blue-active-boxshadow2: #43C6AC;
+
+/* Button color gray-black */
+$gray-black-text: #ced4da;
+$gray-black-background: #212529;
+$gray-black-border: #303030;
+$gray-black-shadow-1: #3c6e71;
+$gray-black-shadow-2: #6c757d;
+$gray-black-span-choice1: #3c6e71;
+$gray-black-span-choice2: #6c757d;
+$gray-black-active-text: #bfbfbf;
+$gray-black-active-background: #ced4da;
+$gray-black-active-background-linear1: #ced4da;
+$gray-black-active-background-linear2: #3c6e71;
+$gray-black-active-boxshadow1: #6c757d;
+$gray-black-active-boxshadow2: #3c6e71;
+
+/* Button color variables */
+$neon-button-text: #43C6AC;
+$neon-button-background: #191654;
+$neon-button-border: #303030;
+$neon-button-shadow-1: #43C6AC;
+$neon-button-shadow-2: #155799;
+$neon-button-span-choice1: #43C6AC;
+$neon-button-span-choice2: #155799;
+$neon-button-active-text: #bfbfbf;
+$neon-button-active-background: #159957;
+$neon-button-active-background-linear1: #159957;
+$neon-button-active-background-linear2: #155799;
+$neon-button-active-boxshadow1: #43C6AC;
+$neon-button-active-boxshadow2: #155799;
+
+/* Grow button colors */
+$grow-button-1: #004e92;
+$grow-button-2: #1cca73;
+$grow-button-font-color: #D1E8E2;

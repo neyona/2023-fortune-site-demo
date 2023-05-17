@@ -1,0 +1,62 @@
+/*  different wrappers */
+.page-container {
+  margin: 1.5rem;
+  margin-top: 2.5em;
+  padding-top: 0.5em;
+}
+
+.extra-space {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+/* The following is used for centering the form on the
+Home page and the images on the Merch page as well.
+THIS ALLOWS THE ITEMS TO STACK INSTEAD OF JUST GET
+SMALL */
+.container-center {
+  align: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* The following is used to hold the cuttlefish
+on the fortune and confirm contact page. It is
+also used on the Form button on the Homepage.
+ITEMS IN THESE CONTAINERS CAN GET SMALL, MAY NOT
+STACK. */
+.container-cuttlefish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-fish-check {
+  font: 3rem $fish-font !important;
+  color: $title-h1 !important;
+}
+
+.content-wrap {
+  padding-bottom: 3em; /* Footer height */
+  padding-top: 1em; /* So content isn't behind the navbar */
+}
+
+/* The following is for the Home Page. */
+.element-wrapper {
+  margin-bottom: 2em;
+}
+
+.grid-container {
+  display: grid;
+  flex-flow: column;
+  grid-gap: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.grid-item {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}

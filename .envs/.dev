@@ -1,0 +1,13 @@
+DJANGO_SETTINGS_MODULE=fc_project.settings.development
+ALLOWED_HOSTS=0.0.0.0,localhost,127.0.0.1,[::1],web
+ENVIRONMENT=development
+SECRET_KEY=*************************
+DEBUG=True
+POSTGRES_ENGINE=django.db.backends.postgresql
+POSTGRES_DB=********
+POSTGRES_USER=********
+POSTGRES_PASS=********
+PG_HOST=******
+PG_PORT=5432
+DATABASE=******
+COMPOSE_HTTP_TIMEOUT=400

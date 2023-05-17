@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Since this is a demo, I wanted to show what I normally have in the .gitignore
+# while still allowing what I want to show up in the github demo.
+
+# .envs/
+# .envs
+# .envs/.dev
+# .envs/.prod
+# .envs/stage
+# docker-compose.yml
+# docker-compose.stage.yml
+# docker-compose.production.yml
+# Dockerfile
+# Dockerfile.prod
+# entrypoint.prod.sh
+# entrypoint.sh
+# nginx.conf
+# nginx
+# nginx/default.conf
+# webpack/webpack.stage.js
+# webpack/webpack.dev.js
+# webpack-stats.json
+# fc_project/settings/development.py
+# Pipfile.lock
+# Makefile
+# scratch.txt
+# aws_scratch.txt
+# heroku_scratch.txt
+
+.idea
+.coverage*
+.DS_Store
+/node_modules
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+logs/
+config_log
+db.sqlite3
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

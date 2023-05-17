@@ -1,0 +1,310 @@
+
+a.link-black-red {
+  color: $un-br !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-br !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-br !important,
+        $bg2-br !important,
+        $bg3-br !important
+      );
+  }
+  &:active {
+    color: $act-br !important;
+  }
+  &:visited {
+    color: $hf-br !important;
+    background-color: $bv-br !important;
+  }
+}
+
+a.link-black-green {
+  color: $un-bg !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bg !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-bg !important,
+        $bg2-bg !important,
+        $bg3-bg !important
+      );
+  }
+  &:active {
+    color: $act-bg !important;
+  }
+  &:visited {
+    color: $hf-bg !important;
+    background-color: $bv-bg !important;
+  }
+}
+
+a.link-black-blue {
+  color: $un-bb !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bb !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg3-bb !important,
+        $bg2-bb !important,
+        $bg1-bb !important
+      );
+  }
+  &:active {
+    color: $act-bb !important;
+  }
+  &:visited {
+    color: $hf-bb !important;
+    background-color: $bv-bb !important;
+  }
+}
+
+a.link-black-orange {
+  color: $un-bo !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bo !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-bo !important,
+        $bg2-bo !important,
+        $bg3-bo !important
+      );
+  }
+  &:active {
+    color: $act-bo !important;
+  }
+  &:visited {
+    color: $hf-bo !important;
+    background-color: $bv-bo !important;
+  }
+}
+
+a.link-black-purple {
+  color: $un-bp !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bp !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-bp !important,
+        $bg2-bp !important,
+        $bg3-bp !important
+      );
+  }
+  &:active {
+    color: $act-bp !important;
+  }
+  &:visited {
+    color: $hf-bp !important;
+    background-color: $bv-bp !important;
+  }
+}
+
+a.link-black-pink {
+  color: $un-bpi !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bpi !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-bpi !important,
+        $bg2-bpi !important,
+        $bg3-bpi !important
+      );
+  }
+  &:active {
+    color: $act-bpi !important;
+  }
+  &:visited {
+    color: $hf-bpi !important;
+    background-color: $bv-bpi !important;
+  }
+}
+
+a.link-blue-green {
+  color: $un-gb !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-gb !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-gb !important,
+        $bg2-gb !important,
+        $bg3-gb !important
+      );
+  }
+  &:active {
+    color: $act-gb !important;
+  }
+  &:visited {
+    color: $hf-gb !important;
+    background-color: $bv-gb !important;
+  }
+}
+
+a.link-blue-purple {
+  color: $un-pb !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-pb !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-pb !important,
+        $bg2-pb !important,
+        $bg3-pb !important
+      );
+  }
+  &:active {
+    color: $act-pb !important;
+  }
+  &:visited {
+    color: $hf-pb !important;
+    background-color: $bv-pb !important;
+  }
+}
+
+a.link-blue-blue {
+  color: $un-bblue !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-bblue !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg3-bblue !important,
+        $bg2-bblue !important,
+        $bg1-bblue !important
+      );
+  }
+  &:active {
+    color: $act-bblue !important;
+  }
+  &:visited {
+    color: $hf-bblue !important;
+    background-color: $bv-bblue !important;
+  }
+}
+
+a.link-gray-black {
+  color: $un-grayb !important;
+  padding: 2px 2px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $hf-grayb !important;
+    filter: drop-shadow(0 0 1px);
+    background-image:
+      linear-gradient(
+        90deg,
+        $bg1-grayb !important,
+        $bg2-grayb !important,
+        $bg3-grayb !important
+      );
+  }
+  &:active {
+    color: $act-grayb !important;
+  }
+  &:visited {
+    color: $hf-grayb !important;
+    background-color: $bv-grayb !important;
+  }
+}

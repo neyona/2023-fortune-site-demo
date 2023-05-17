@@ -1,0 +1,23 @@
+/* Homepage related
+Homepage Figure of Cuttlefish Eye is in a React Bootstrap Figure.
+The following are overrides. */
+.img {
+  border: 10px solid $image-border;
+}
+
+/* Fun title for Homepage push the button message */
+.special-title {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: $paragraph-font !important;
+  background-image:
+    linear-gradient(
+      90deg,
+      $special-title1,
+      $special-title2,
+      $special-title3,
+      $special-title4
+    );
+  text-align: center;
+  position: relative;
+}

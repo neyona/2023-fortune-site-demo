@@ -1,0 +1,26 @@
+# install dependencies
+RUN pip3 install --upgrade pip
+COPY ./requirements.txt /app/requirements.txt
+RUN pip3 install -r requirements.txt
+
+# This has to do with setting the root user
+RUN addgroup --system django \
+  && adduser --system --ingroup django django
+
+# Copy project
+COPY . /app/
+
+# copy entrypoint.prod
+COPY --chown=django:django /entrypoint.prod.sh .
+RUN sed -i 's/\r$//g' /app/entrypoint.prod.sh
+RUN chmod +x /app/entrypoint.prod.sh
+
+COPY --chown=django:django . /app
+
+# chown all the files to the app user
+RUN chown django:django /app
+
+USER django
+
+# run entrypoint.prod.sh
+ENTRYPOINT ["/app/entrypoint.prod.sh"]

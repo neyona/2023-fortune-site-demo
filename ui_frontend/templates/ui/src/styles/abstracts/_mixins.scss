@@ -1,0 +1,241 @@
+/* The following mixin is to use -webkit- and not webkit as needed. */
+@mixin prefix-property($name, $value) {
+  -webkit-#{$name}: $value;
+  #{$name}: $value;
+}
+
+/* The following mixin works for naming animations */
+@mixin keyframes-animation($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+/*
+$fs = font size
+$ef = everywhere font
+$pc = paragraph color
+$bc = background color
+$h1s = h1 font size
+$h1f = h1 font
+$h1tc = h1 title color
+$h2s = h2 font size
+$h2f = h2 font
+$h2tc = h2 title color
+$h3s = h3 font size
+$h3f = h3 font
+$h3tc = h2 title color
+$cfs = caption font size
+$sfs = span font size
+*/
+@mixin bodies($fs, $ef, $pc, $bc, $h1s, $h1f, $h1tc, $h2s, $h2f, $h2tc, $h3s, $h3f, $h3tc, $cfs, $sfs) {
+  position: relative;
+  overflow: hidden;
+  line-height: 2rem;
+  font: $fs $ef;
+  color: $pc;
+  background-color: $bc;
+  height: 100vh;
+  border: none;
+  margin: 0;
+  overflow-y: auto;
+  p {
+    color: $pc;
+    font-family: $fs $ef;
+  }
+  h1 {
+    font: $h1s $h1f;
+    font-weight: normal;
+    color: $h1tc;
+  }
+  .card h1 {
+    font: $h1s $h1f;
+    font-weight: normal;
+    color: $h1tc;
+  }
+  h2 {
+    font: $h2s $h2f;
+    font-weight: normal;
+    color: $h2tc;
+  }
+  .card h2 {
+    font: $h2s $h2f;
+    font-weight: normal;
+    color: $h2tc;
+  }
+  h3 {
+    font: $h3s $h3f;
+    font-weight: normal;
+    color: $h3tc;
+  }
+  .card h3 {
+    font: $h3s $h3f;
+    font-weight: normal;
+    color: $h3tc;
+  }
+  // Image Captions
+  .figure-caption-custom {
+    font-family: $ef;
+    text-align: center;
+    color: $pc !important;
+    font-size: 1rem !important;
+  }
+  // This pertains to the fortune form, it is the size of the labels of the
+  // form inputs and headings.
+  .legend {
+    color: $pc !important;
+    font-family: $ef !important;
+    font-size: $cfs !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .span-fortune-match {
+    font: $sfs $ef;
+  }
+}
+
+/*
+$tc = text color
+$bgc = background color
+$bc = border color
+$sc1 = shadow color one
+$sc2 = shadow color two
+$spanc1 = span color one
+$spanc2 = span color two
+$actbgc = active background
+$actbglin1 = active background linear one
+$actbglin2 = active background linear two
+$acttc = active text color
+$box1 = box shadow one
+$box2 = box shadow two
+*/
+@mixin animated-button($tc, $bgc, $bc, $sc1, $sc2, $spanc1, $spanc2, $actbgc, $actbglin1, $actbglin2, $acttc, $box1, $box2) {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid $bc;
+    background: $bgc;
+    color: $tc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+      box-shadow: 0 0 10px $sc1, 0 0 25px $sc2, 0 0 50px $sc1;
+      transition-delay: 0.3s ease-in-out;
+      transform: scale(1.1);
+    }
+    span {
+      position: absolute;
+    }
+    span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, $spanc1);
+    }
+    &:hover span:nth-child(1) {
+      left: 100%;
+      transition: 0.7s;
+    }
+    span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, $spanc2);
+    }
+    &:hover span:nth-child(3) {
+      right: 100%;
+      transition: 0.7s;
+      transition-delay: 0.35s;
+    }
+    span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, $spanc1);
+    }
+    &:hover span:nth-child(2) {
+      top: 100%;
+      transition: 0.7s;
+      transition-delay: 0.17s;
+    }
+    span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, $spanc2);
+    }
+    &:hover span:nth-child(4) {
+      bottom: 100%;
+      transition: 0.7s;
+      transition-delay: 0.52s;
+    }
+    &:active {
+      background: $actbgc;
+      background: linear-gradient(to top right, $actbglin1, $actbglin2);
+      color: $acttc;
+      box-shadow: 0 0 8px $box1, 0 0 8px $box2, 0 0 8px $box1;
+      transition: 0.1s;
+    }
+    &:active span:nth-child(1)
+      span:nth-child(2)
+      span:nth-child(2)
+      span:nth-child(2) {
+        transition: none;
+        transition-delay: none;
+      }
+}
+
+/*
+$unvisit is has and has not been visited yet
+$backvisit is background of the visited link
+$hoverfocus is the letter color when focusing or hovering
+$bg is background, there is a 1 2 3
+$active is the color for link active
+*/
+@mixin links($unvisit, $backvisit, $hoverfocus, $bg1, $bg2, $bg3, $active) {
+  a {
+    color: $unvisit !important;
+    padding: 2px 2px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    &:hover,
+    &:focus {
+      color: $hoverfocus !important;
+      filter: drop-shadow(0 0 1px);
+      background-image:
+        linear-gradient(
+          90deg,
+          $bg1 !important,
+          $bg2 !important,
+          $bg3 !important
+        );
+    }
+    &:active {
+      color: $active !important;
+    }
+    &:visited {
+      color: $unvisit !important;
+      background-color: $backvisit !important;
+    }
+  }
+}

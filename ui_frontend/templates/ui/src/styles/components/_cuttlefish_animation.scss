@@ -1,0 +1,55 @@
+/* The cuttlefish on some pages moves so it appears that it is bobbing */
+@include keyframes-animation(animate-fish) {
+  0% {
+    @include prefix-property(
+      transform,
+      rotate(1deg) translate(0.3vmin, 0.8vmin)
+    );
+  }
+
+  20% {
+    @include prefix-property(
+      transform,
+      rotate(-0.8deg) translate(-0.1vmin, -0.9vmin)
+    );
+  }
+
+  55% {
+    @include prefix-property(
+      transform,
+      rrotate(0.8deg) translate(0.3vmin, -0.6vmin)
+    );
+  }
+
+  70% {
+    @include prefix-property(
+      transform,
+      rotate(1deg) translate(-0.2vmin, 0.9vmin)
+    );
+  }
+
+  100% {
+    @include prefix-property(
+      transform,
+      rotate(-1deg) translate(0.4vmin, -0.5vmin)
+    );
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .cuttlefish-animation {
+    animation: none;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+  }
+}
+
+.cuttlefish-animation {
+  animation-name: animate-fish;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}

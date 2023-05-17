@@ -1,0 +1,127 @@
+.alice-carousel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+div.alice-carousel__next-btn {
+  text-align: left !important;
+}
+.alice-carousel__prev-btn-item {
+  color: $carousel-icon-color;
+  font-size: 1.6rem;
+}
+.alice-carousel__next-btn-item {
+  color: $carousel-icon-color;
+  font-size: 1.6rem;
+}
+
+.item-black-red {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-br,
+      $carousel-br1,
+      $carousel-br
+    );
+}
+
+.item-black-green {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bg,
+      $carousel-bg1,
+      $carousel-bg
+    );
+}
+
+.item-black-blue {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bb,
+      $carousel-bb1,
+      $carousel-bb
+    );
+}
+
+.item-black-orange {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bo,
+      $carousel-bo1,
+      $carousel-bo
+    );
+}
+
+.item-black-purple {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bp,
+      $carousel-bp1,
+      $carousel-bp
+    );
+}
+
+.item-black-pink {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bpink,
+      $carousel-bpink1,
+      $carousel-bpink
+    );
+}
+
+.item-blue-green {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-gb,
+      $carousel-gb1,
+      $carousel-gb
+    );
+}
+
+.item-blue-purple {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-pb,
+      $carousel-pb1,
+      $carousel-pb
+    );
+}
+
+.item-blue-blue {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-bblue,
+      $carousel-bblue1,
+      $carousel-bblue
+    );
+}
+
+.item-gray-black {
+  color: $carousel-icon-color;
+  background-image:
+    linear-gradient(
+      90deg,
+      $carousel-grayblack,
+      $carousel-grayblack1,
+      $carousel-grayblack
+    );
+}

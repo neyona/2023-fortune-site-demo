@@ -1,0 +1,13 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+build:
+  docker:
+    web: Dockerfile.heroku
+release:
+  image: web
+  command:
+    - python3.11 manage.py collectstatic --noinput
+    - python3.11 manage.py migrate
+run:
+  web: gunicorn fc_project.wsgi

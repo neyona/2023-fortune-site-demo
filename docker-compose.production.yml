@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+    web:
+        build:
+            context: .
+            dockerfile: ./Dockerfile.prod
+        # image: <if using aws this is the corresponding aws image>
+        command: >
+            sh -c "python3.11 manage.py collectstatic --noinput &&
+                   python3.11 manage.py migrate &&
+                   gunicorn dra_project.wsgi:application --bind 0.0.0.0:8000"
+        volumes:
+            - static_volume:/app/staticfiles
+            - media_volume:/app/mediafiles
+        expose:
+          - 8000
+        env_file:
+            - .envs/.prod
+
+    nginx-proxy:
+        container_name: nginx-proxy
+        build: nginx
+        # image: <if using aws this is the corresponding aws image>
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+            - static_volume:/app/staticfiles
+            - media_volume:/app/mediafiles
+        ports:
+            - 443:443
+            - 80:80
+        restart: always
+        depends_on:
+            - web
+
+volumes:
+    static_volume:
+    media_volume:

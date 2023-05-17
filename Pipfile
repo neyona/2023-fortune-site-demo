@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-rest-framework = "*"
+psycopg2-binary = "*"
+django-sms = "*"
+django-cors-headers = "*"
+djangorestframework-api-key = "*"
+django-autoslug = "*"
+django-filter = "*"
+pillow = "*"
+django-phonenumber-field = "*"
+django-countries = "*"
+django-manifest-loader = "*"
+gunicorn = "*"
+whitenoise = "*"
+celery = "*"
+django-celery-beat = "*"
+redis = "*"
+flower = "*"
+dj-database-url = "*"
+django-heroku = "*"
+django-storages = "*"
+boto3 = "*"
+djoser = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

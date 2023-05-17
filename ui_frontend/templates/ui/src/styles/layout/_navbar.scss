@@ -1,0 +1,104 @@
+/* Navigation bar related CSS
+Boostrap Navbars are flex boxes. Float does not work. */
+.navbar-top {
+  background-color: $navbar-background;
+}
+
+a.navbar-brand {
+  color: $navbar-text !important;
+  background: none !important;
+  background-image: none !important;
+  font-family: $navbar-font !important;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.0rem !important;
+}
+
+.navdropdown-menu {
+  background-color: $navbar-background !important;
+  color: $navbar-text !important;
+  font-family: $navbar-font !important;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.0rem !important;
+}
+
+.navdropdown-item {
+  color: $navbar-text !important;
+  font-family: $navbar-font !important;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.0rem !important;
+}
+
+div.nav-item.dropdown {
+  text-align: right !important;
+}
+
+a.dropdown-item {
+  background-color: $navbar-background !important;
+  color: $navbar-text !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+/* Below is neccessary of the color not behind the words is white */
+div.dropdown-menu {
+  background-color: $navbar-background !important;
+  text-align: right !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+a.nav-link {
+  color: $navbar-text !important;
+  background: none !important;
+  background-image: none !important;
+  font-family: $navbar-font !important;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.0rem !important;
+  font-weight: 200;
+  margin: 0.3rem !important;
+  text-align: right !important;
+  // align-items: flex-end !important;
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+  color: $navbar-text !important;
+  filter: drop-shadow(0 0 3px);
+  background: none !important;
+  background-image: none !important;
+}
+
+a.nav-link:active {
+  color: $navbar-active !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+// .navbar-toggle {
+//   border-color: $navbar-text !important;
+//   border-style: solid !important;
+//   border-width: 1px;
+// }
+
+button.navbar-toggler {
+  background-color: none;
+  border-color: $navbar-text !important;
+  border-style: solid !important;
+  border-width: 1px;
+}
+
+button.navbar-toggler:hover {
+  box-shadow: 0 0 5px $navbar-toggler-shadow1, 0 0 5px $navbar-toggler-shadow2, 0 0 5px $navbar-toggler-shadow1;
+  transition-delay: 0.1s;
+  transform: scale(1.1);
+}
+
+.menu-outline {
+	color: $navbar-text;
+}

@@ -1,0 +1,418 @@
+.card {
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: $card-text;
+}
+
+/* Homepage */
+.card-home {
+  background-image:
+    linear-gradient(
+      30deg,
+      $card-home1,
+      $card-home2,
+      $card-home3,
+      $card-home4
+    );
+}
+
+.card-dark {
+  background-image:
+    linear-gradient(
+      10deg,
+      $card-dark1,
+      $card-dark2,
+      $card-dark3,
+      $card-dark4,
+      $card-dark5,
+      $card-dark6,
+      $card-dark7,
+      $card-dark8,
+      $card-dark9,
+      $card-dark10
+    );
+}
+
+.card-art {
+  background-image:
+    linear-gradient(
+      10deg,
+      $card-art1,
+      $card-art2,
+      $card-art3,
+      $card-art4,
+      $card-art5,
+      $card-art6,
+      $card-art7,
+      $card-art8,
+      $card-art9,
+      $card-art10
+    );
+}
+
+.card-auraOne {
+  background-image:
+    linear-gradient(
+      110deg,
+      $card-pink1,
+      $card-pink2,
+      $card-pink3,
+      $card-pink4
+    );
+}
+
+.card-auraTwo {
+  background-image:
+    linear-gradient(
+      80deg,
+      $card-gold1,
+      $card-gold2,
+      $card-gold3
+    );
+  color: $card-gold-text !important;
+}
+
+.card-auraThree {
+  background-image:
+    linear-gradient(
+      100deg,
+      $card-lightgreen1,
+      $card-lightgreen2,
+      $card-lightgreen3
+    );
+}
+
+.card-auraFour {
+  background-image:
+    linear-gradient(
+      20deg,
+      $card-cyan1,
+      $card-cyan2,
+      $card-cyan3
+    );
+}
+
+.card-auraFive {
+  background-image:
+    linear-gradient(
+      140deg,
+      $card-lightpurple1,
+      $card-lightpurple2,
+      $card-lightpurple3
+    );
+}
+
+.card-auraSix {
+  background-image:
+    linear-gradient(
+      100deg,
+      $card-noaura1,
+      $card-noaura2,
+      $card-noaura3
+    );
+}
+
+.card-auraSeven {
+  background-image:
+    linear-gradient(
+      100deg,
+      $card-darkpink1,
+      $card-darkpink2,
+      $card-darkpink3
+    );
+}
+
+.card-auraEight {
+  background-image:
+    linear-gradient(
+      140deg,
+      $card-snow1,
+      $card-snow2,
+      $card-snow3
+    );
+  color: $card-snow-text !important;
+}
+
+.card-auraNine {
+  background-image:
+    linear-gradient(
+      260deg,
+      $card-limegreen1,
+      $card-limegreen2,
+      $card-limegreen3
+    );
+}
+
+.card-auraTen {
+  background-image:
+    linear-gradient(
+      50deg,
+      $card-dodgerblue1,
+      $card-dodgerblue2,
+      $card-dodgerblue3,
+      $card-dodgerblue4
+    );
+}
+
+.card-auraEleven {
+  background-image:
+    linear-gradient(
+      130deg,
+      $card-indigo1,
+      $card-indigo2,
+      $card-indogo3,
+      $card-indigo4
+    );
+}
+
+.card-auraTwelve {
+  background-image:
+    linear-gradient(
+      10deg,
+      $card-dimgray1,
+      $card-dimgray2,
+      $card-dimgray3
+    );
+}
+
+.card-auraThirteen {
+  background-image:
+    linear-gradient(
+      10deg,
+      $card-orange1,
+      $card-orange2,
+      $card-orange3
+    );
+  color: $card-orange-text !important;
+}
+
+
+.card-default {
+  background-image:
+    linear-gradient(
+      50deg,
+      $card-default1,
+      $card-default2
+    );
+}
+
+.card-page {
+  background-image:
+    linear-gradient(
+      180deg,
+      $card-page1,
+      $card-page2
+    );
+}
+
+.card-page-alt {
+  background-image:
+    linear-gradient(
+      180deg,
+      $card-one,
+      $card-two,
+      $card-three,
+      $card-four
+    );
+}
+
+.card-contact-confirm {
+  background-image:
+    linear-gradient(
+      180deg,
+      $card-one,
+      $card-two,
+      $card-three,
+      $card-four
+    );
+  align-content: center;
+}
+
+.card-page-alt-contact {
+  background-image:
+    linear-gradient(
+      180deg,
+      $card-four,
+      $card-three,
+      $card-two,
+      $card-one
+    );
+}
+
+.card-black-red {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-red,
+      $black-red1,
+      $black-red2,
+      $black-red3,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-red {
+  color: $title-br !important;
+}
+
+.card-black-green {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-green,
+      $black-green1,
+      $black-green2,
+      $black-green3,
+      $black-green4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-green {
+  color: $title-bg !important;
+}
+
+.card-black-blue {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-blue,
+      $black-blue1,
+      $black-blue2,
+      $black-blue3,
+      $black-blue4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-blue {
+  color: $title-bb !important;
+}
+
+.card-black-orange {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-orange,
+      $black-orange1,
+      $black-orange2,
+      $black-orange3,
+      $black-orange4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-orange {
+  color: $title-bo !important;
+}
+
+.card-black-purple {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-purple,
+      $black-purple1,
+      $black-purple2,
+      $black-purple3,
+      $black-purple4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-purple {
+  color: $title-bp !important;
+}
+
+.card-black-pink {
+  background-image:
+    linear-gradient(
+      90deg,
+      $black-pink1,
+      $black-pink2,
+      $black-pink3,
+      $black-pink4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-black-pink {
+  color: $title-bpink !important;
+}
+
+.card-blue-green {
+  background-image:
+    linear-gradient(
+      90deg,
+      $blue-green,
+      $blue-green1,
+      $blue-green2,
+      $blue-green3,
+      $blue-green4,
+      $blue-dark
+    );
+    color: $container-text;
+}
+
+.title-blue-green {
+  color: $title-gb !important;
+}
+
+.card-blue-purple {
+  background-image:
+    linear-gradient(
+      90deg,
+      $blue-purple,
+      $blue-purple1,
+      $blue-purple2,
+      $blue-purple3,
+      $blue-purple4,
+      $blue-dark
+    );
+    color: $container-text;
+}
+
+.title-blue-purple {
+  color: $title-pb !important;
+}
+
+.card-blue-blue {
+  background-image:
+    linear-gradient(
+      90deg,
+      $blue-blue2,
+      $blue-blue3,
+      $blue-blue4,
+      $blue-dark
+    );
+    color: $container-text;
+}
+
+.title-blue-blue {
+  color: $title-bblue !important;
+}
+
+.card-gray-black {
+  background-image:
+    linear-gradient(
+      90deg,
+      $gray-black,
+      $gray-black1,
+      $gray-black2,
+      $gray-black3,
+      $gray-black4,
+      $black
+    );
+    color: $container-text;
+}
+
+.title-gray-black {
+  color: $title-grayblack !important;
+}

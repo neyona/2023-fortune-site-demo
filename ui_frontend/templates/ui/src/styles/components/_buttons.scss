@@ -1,0 +1,233 @@
+/* Buttons and switches */
+
+.btn-purple {
+  @include animated-button($black-purple-text, $black-purple-background, $black-purple-border, $black-purple-shadow-1, $black-purple-shadow-2, $black-purple-span-choice1, $black-purple-span-choice2, $black-purple-active-background, $black-purple-active-background-linear1, $black-purple-active-background-linear2, $black-purple-active-text, $black-purple-active-boxshadow1, $black-purple-active-boxshadow2);
+}
+
+.btn-black-red {
+  @include animated-button($black-red-text, $black-red-background, $black-red-border, $black-red-shadow-1, $black-red-shadow-2, $black-red-span-choice1, $black-red-span-choice2, $black-red-active-background, $black-red-active-background-linear1, $black-red-active-background-linear2, $black-red-active-text, $black-red-active-boxshadow1, $black-red-active-boxshadow2);
+}
+
+.btn-black-green {
+  @include animated-button($black-green-text, $black-green-background, $black-green-border, $black-green-shadow-1, $black-green-shadow-2, $black-green-span-choice1, $black-green-span-choice2, $black-green-active-background, $black-green-active-background-linear1, $black-green-active-background-linear2, $black-green-active-text, $black-green-active-boxshadow1, $black-green-active-boxshadow2);
+}
+
+.btn-black-blue {
+  @include animated-button($black-blue-text, $black-blue-background, $black-blue-border, $black-blue-shadow-1, $black-blue-shadow-2, $black-blue-span-choice1, $black-blue-span-choice2, $black-blue-active-background, $black-blue-active-background-linear1, $black-blue-active-background-linear2, $black-blue-active-text, $black-blue-active-boxshadow1, $black-blue-active-boxshadow2);
+}
+
+.btn-black-orange {
+  @include animated-button($black-orange-text, $black-orange-background, $black-orange-border, $black-orange-shadow-1, $black-orange-shadow-2, $black-orange-span-choice1, $black-orange-span-choice2, $black-orange-active-background, $black-orange-active-background-linear1, $black-orange-active-background-linear2, $black-orange-active-text, $black-orange-active-boxshadow1, $black-orange-active-boxshadow2);
+}
+
+.btn-black-purple {
+  @include animated-button($black-purple-text, $black-purple-background, $black-purple-border, $black-purple-shadow-1, $black-purple-shadow-2, $black-purple-span-choice1, $black-purple-span-choice2, $black-purple-active-background, $black-purple-active-background-linear1, $black-purple-active-background-linear2, $black-purple-active-text, $black-purple-active-boxshadow1, $black-purple-active-boxshadow2);
+}
+
+.btn-black-pink {
+  @include animated-button($black-pink-text, $black-pink-background, $black-pink-border, $black-pink-shadow-1, $black-pink-shadow-2, $black-pink-span-choice1, $black-pink-span-choice2, $black-pink-active-background, $black-pink-active-background-linear1, $black-pink-active-background-linear2, $black-pink-active-text, $black-pink-active-boxshadow1, $black-pink-active-boxshadow2);
+}
+
+.btn-blue-green {
+  @include animated-button($blue-green-text, $blue-green-background, $blue-green-border, $blue-green-shadow-1, $blue-green-shadow-2, $blue-green-span-choice1, $blue-green-span-choice2, $blue-green-active-background, $blue-green-active-background-linear1, $blue-green-active-background-linear2, $blue-green-active-text, $blue-green-active-boxshadow1, $blue-green-active-boxshadow2);
+}
+
+.btn-blue-purple {
+  @include animated-button($blue-purple-text, $blue-purple-background, $blue-purple-border, $blue-purple-shadow-1, $blue-purple-shadow-2, $blue-purple-span-choice1, $blue-purple-span-choice2, $blue-purple-active-background, $blue-purple-active-background-linear1, $blue-purple-active-background-linear2, $blue-purple-active-text, $blue-purple-active-boxshadow1, $blue-purple-active-boxshadow2);
+}
+
+.btn-blue-blue {
+  @include animated-button($blue-blue-text, $blue-blue-background, $blue-blue-border, $blue-blue-shadow-1, $blue-blue-shadow-2, $blue-blue-span-choice1, $blue-blue-span-choice2, $blue-blue-active-background, $blue-blue-active-background-linear1, $blue-blue-active-background-linear2, $blue-blue-active-text, $blue-blue-active-boxshadow1, $blue-blue-active-boxshadow2);
+}
+
+.btn-gray-black {
+  @include animated-button($gray-black-text, $gray-black-background, $gray-black-border, $gray-black-shadow-1, $gray-black-shadow-2, $gray-black-span-choice1, $gray-black-span-choice2, $gray-black-active-background, $gray-black-active-background-linear1, $gray-black-active-background-linear2, $gray-black-active-text, $gray-black-active-boxshadow1, $gray-black-active-boxshadow2);
+}
+
+/* The button for the first page form */
+@media screen and (prefers-reduced-motion: reduce) {
+  .btn-og-circle {
+    background-image:
+      linear-gradient(
+        70deg,
+        $btn-og-bg1 0%,
+        $btn-og-bg2 50%,
+        $btn-og-bg3 80%,
+        $btn-og-bg4 100%
+      );
+    color: $btn-text;
+    font: 2.1rem $font-h2 !important;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition: none;
+    border: none;
+    box-shadow: -2px -2px 10px $shadow-4, 2px 2px 10px $shadow-2;
+  }
+}
+
+.btn-og-circle {
+  background-image:
+    linear-gradient(
+      70deg,
+      $btn-og-bg1 0%,
+      $btn-og-bg2 50%,
+      $btn-og-bg3 80%,
+      $btn-og-bg4 100%
+    );
+  color: $btn-text;
+  font: 2.1rem $font-h2 !important;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  transition: none;
+  border: none;
+  box-shadow: -2px -2px 10px $shadow-4, 2px 2px 10px $shadow-2;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-og-circle:hover,
+.btn-og-circle:focus {
+  background-image:
+    linear-gradient(
+      70deg,
+      $btn-og-bg1 0%,
+      $btn-og-bg2 50%,
+      $btn-og-bg3 80%,
+      $btn-og-bg4 100%
+    );
+  color: $btn-text-hover;
+  font: 2.4rem $font-h2 !important;
+  box-shadow: 0 0 10px $shadow-3, 0 0 25px $shadow-2, 0 0 50px $shadow-3;
+  transition-delay: 0.1s;
+  transform: scale(1.1);
+}
+
+.btn-og-circle:active {
+  background-image:
+    linear-gradient(
+      70deg,
+      $btn-og-bg1 0%,
+      $btn-og-bg2 50%,
+      $btn-og-bg3 80%,
+      $btn-og-bg4 100%
+    );
+  transform: scale(1.2);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Rounded sliders */
+$toggle-indicator-size: 24px; // changing this number will resize the whole toggle
+$track-height: $toggle-indicator-size + 6;
+$track-width: $toggle-indicator-size * 2.5;
+$highContrastModeSupport: solid 2px transparent;
+/*
+"$light"
+"$mid"
+"$dark"
+*/
+$track-border: $mid;
+$track-background: $light;
+$focus-ring: 0px 0px 0px 2px $dark;
+$speed: 1s;
+
+// Toggle specific styles
+.toggle {
+  align-items: center;
+  border-radius: 100px;
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+// Since we can't style the checkbox directly, we "hide" it so we can draw the toggle.
+.toggle__input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  // This style sets the focus ring. The ":not([disabled])" prevents the focus ring from creating a flash when the element is clicked.
+  &:not([disabled]):active + .toggle-track,
+  &:not([disabled]):focus + .toggle-track {
+    border: 1px solid transparent;
+    box-shadow: $focus-ring;
+  }
+
+  &:disabled + .toggle-track {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.toggle-track {
+  background: $track-background;
+  border: 1px solid $track-border;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: $track-height;
+  margin-right: 12px;
+  position: relative;
+  width: $track-width;
+}
+
+.toggle-indicator {
+  align-items: center;
+  background: $dark;
+  border-radius: $toggle-indicator-size;
+  bottom: 2px;
+  display: flex;
+  height: $toggle-indicator-size;
+  justify-content: center;
+  left: 2px;
+  outline: $highContrastModeSupport;
+  position: absolute;
+  transition: $speed;
+  width: $toggle-indicator-size;
+}
+
+// The check mark is optional
+.checkMark {
+  fill: #fff;
+  height: $toggle-indicator-size - 4;
+  width: $toggle-indicator-size - 4;
+  opacity: 0;
+  transition: opacity $speed ease-in-out;
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator {
+  background: $dark;
+  transform: translateX($track-width - $track-height);
+
+  .checkMark {
+    opacity: 1;
+    transition: opacity $speed ease-in-out;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track {
+    border-radius: 0;
+  }
+}

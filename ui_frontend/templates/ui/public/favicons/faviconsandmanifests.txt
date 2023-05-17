@@ -1,0 +1,2 @@
+Items like favicon.ico and android favicons belong in here. They do not need to
+be in this demo file.
